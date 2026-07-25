@@ -1,0 +1,6 @@
+{
+  "name": "Samsung Galaxy Watch Thailand Store",
+  "description": "ร้านค้าออนไลน์นาฬิกาอัจฉริยะ Samsung Galaxy Watch อย่างเป็นทางการ ดีไซน์หรูหรา พร้อมระบบเปรียบเทียบสเปค AI ช่วยเลือก และ Studio ปรับแต่งสาย",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

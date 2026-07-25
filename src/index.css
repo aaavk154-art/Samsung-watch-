@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #020b18;
+    --accent-gold: #c5a028;
+    --accent-gold-light: #f3e5ab;
+    --accent-blue: #3b82f6;
+    --text-white: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-hover: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    background-image: radial-gradient(circle at 70% 30%, #08203e 0%, #020b18 70%);
+    color: var(--text-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Sleek Interface Glassmorphism & Aesthetics */
+.sleek-glass {
+  background: rgba(8, 24, 48, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 40, 0.2);
+}
+
+.sleek-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sleek-glass-card:hover {
+  border-color: rgba(197, 160, 40, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2), 0 0 20px 0 rgba(197, 160, 40, 0.15);
+  transform: translateY(-2px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #f3e5ab 50%, #c5a028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-sleek-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #c5a028 100%);
+  color: #020b18;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 20px rgba(197, 160, 40, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-sleek-gold:hover {
+  background: linear-gradient(135deg, #e5c148 0%, #d4af37 100%);
+  box-shadow: 0 6px 25px rgba(197, 160, 40, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbar for Sleek Interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020b18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 40, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 40, 0.6);
+}
